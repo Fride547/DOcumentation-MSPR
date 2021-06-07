@@ -14,6 +14,13 @@ pipeline {
                 sh 'ls -l /var/www/html'
             }
         }
+        
+        stage('Run application') {
+            steps {
+                sh 'java -jar go-secure.jar cberthier.html'
+                
+            }
+        }
     }
 }
 
