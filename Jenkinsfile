@@ -18,12 +18,7 @@ pipeline {
             }
         }
 
-         stage('open file') {
-            steps {
-                sh '/usr/bin/firefox /var/www/html/cberthier.html'
-                
-            }
-        }
+         
     }
 }
 
