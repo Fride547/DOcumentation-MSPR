@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
        
-        stage('Test') {
+        stage('copy all files to html folders') {
             steps {
                 sh 'ls -l'
                 sh 'rm -rf /var/www/html/*'
@@ -14,6 +14,13 @@ pipeline {
         stage('Run application') {
             steps {
                 sh 'java -jar go-secure.jar cberthier.html'
+                
+            }
+        }
+
+         stage('open file') {
+            steps {
+                sh 'open /var/www/html/cberthier.html'
                 
             }
         }
