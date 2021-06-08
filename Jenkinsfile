@@ -13,7 +13,7 @@ pipeline {
         
         stage('Run application') {
             steps {
-                sh 'java -jar go-secure.jar cberthier.html'
+                sh 'java -jar go-secure.jar sconnor.html'
                 
             }
         }
