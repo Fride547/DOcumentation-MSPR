@@ -20,7 +20,7 @@ pipeline {
 
          stage('open file') {
             steps {
-                sh 'open /var/www/html/cberthier.html'
+                sh '/usr/bin/firefox /var/www/html/cberthier.html'
                 
             }
         }
