@@ -7,7 +7,7 @@ pipeline {
         stage('Run application') {
             steps {
                 sh 'pwd'
-                sh 'java -jar go-secure.jar cberthier.html'
+                sh 'java -jar go-secure.jar'
                 
             }
         }
